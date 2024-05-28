@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./validation.css">
+</head>
+
+<body>
+    <div id="container">
+
+
+        <form onsubmit="return validateForm()">
+            <h1 style="color: green;"> Javatpoint</h1>
+            <h3>User validation form</h3>
+            <td>Full Name:</td>
+            <input type="text" id="fname" value="">
+            <span id="message1" style="color: red;">*</span>
+            <br><br>
+            <td>Last Name:</td>
+            <input type="text" id="lname" value="">
+            <span id="message2" style="color: red;">*</span>
+            <br><br>
+            <td>Enter Password:</td>
+            <input style="margin-right: 32px;" type="password" id="pass1" value="">
+            <span id="message3" style="color: red;"></span>
+            <br><br>
+            <td>Confirm Password:</td>
+            <input style="margin-right: 50px;" type="password" id="pass2" value="">
+            <span id="message4" style="color: red;"></span>
+            <br><br>
+            <button style="margin-left: 130px;" type="submit">Submit</button>
+            <button type="reset" value="reset">Reset</button>
+        </form>
+    </div>
+    <script src="./validation.js"></script>
+
+
+</body>
+
+</html>
